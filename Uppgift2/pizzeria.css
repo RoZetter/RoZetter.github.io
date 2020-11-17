@@ -1,33 +1,60 @@
-/* FÖRSTA HEADERN */
 
-.forsta {
+body {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(rgb(31, 28, 28)));
+  background-color: rgb(31, 28, 28);
+  padding: 0px;
+  margin: 0px;
+  }
+
+
+
+    /* FÖRSTA HEADERN */
+
+header.forsta {
     background-color: rgb(0, 0, 0);
     height: 50px;
     padding: 30px 20px 30px 20px;
-    color: rgb(218, 218, 218);
     margin: 0 100px 0 100px;
     border-bottom: solid rgb(194, 191, 191) 1px;
   }
   
-  .forsta .logo a {
-    background-image: url("/images/subarulogo1.png");
-    background-size: 160px;
+header.forsta li.logo a {
+    background-image: url("/imgs/pizza1.jpg");
+    background-size: 90px;
+    border-radius: 50px;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     display: block;
     text-indent: -9999999px;
-    top: -37.515px;
-    height: 79px;
+    top: -30px;
+    height: 80px;
     width: 80px;
-    padding: 0px 60px 0px 60px;
-    margin: auto;
     z-index: 10;
   }
   
+header.forsta ul.top {
+list-style-type: none;
+display: flex;
+
+ 
+}
+
+ul.top li {
+  margin-left: auto;
+  margin-right: auto; 
+  position: relative;
+  top: -25.515px;
+}
+
+ul.top a {
+  text-decoration: none;
+}
+
+
     /* ANDRA HEADERN*/
   
-  #header {
+#header {
     background-color: rgba(0, 0, 0, 0,1);
     color: white;
     position: sticky;
@@ -36,13 +63,13 @@
     height: 50px;
   }
   
-  .scrolled #header {
+.scrolled #header {
     opacity: 1;
     transition: opacity .2s;
     background-color: black;
   }
   
-  #header ul{
+#header ul{
     padding: 0;
     list-style-type: none;
     display: inline-flex;
@@ -50,12 +77,12 @@
     margin: auto;
   }
   
-  #header li {
+#header li {
     height: 50px;
-    margin: 0px 5px 10px 10px;
+    margin: 0px 50px 10px 10px;
   }
   
-  #header a {
+#header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: auto;
@@ -64,83 +91,76 @@
     font-size: 17px;
   }
   
-  #header a:hover {
+#header a:hover {
     color: #0e4bef;
   }
   
-  #header li:first-child {
-    margin-left: 355px;
+#header li:first-child {
+    margin-left: 500px;
   }
   
-  #header li:nth-last-child(5) {
-    margin-right: 45px;    
+#header li:nth-last-child(2) {
+    margin-right: 300px;    
   }
   
-  #header .right a{
+#header .right a{
     font-size: 11px;
   
   }
   
-  .divide {
-    position: relative;
-    top: 10px;
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  
-  
+
   
   
     /* SLIDESHOW */
   
-  #slide{
+#slide{
     width: 100%;
       }
       
-  * {
+* {
     box-sizing: border-box;
   }
   
-  .mySlides {
+.mySlides {
     display: none;
     margin: 0 100px 0 100px;
   }
   
-  .slideshow-container {
+.slideshow-container {
     width: auto;
       position: relative;
       margin: -10px;
   
   }
   /* Next & previous buttons */
-  .prev, .next {
+.prev, .next {
       cursor: pointer;
       position: absolute;
       top: 50%;
       width: auto;
       padding: 16px;
-    margin: -22px 100px 0 100px;
-    background-color: rgba(255, 255, 255, .25);
+      margin: -22px 100px 0 100px;
+      background-color: rgba(255, 255, 255, .25);
       color: rgb(73, 75, 85);
       font-weight: bold;
       font-size: 18px;
       transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
   }
-  /* Position the "next button" to the right */
-  .next {
+  /* Positionera "next button" till höger */
+.next {
       right: 0;
       border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+/* Om vid hover, lägg till en svart bakgroundsfärg med lite transparens */
+.prev:hover, .next:hover {
     background-color: rgba(28,29,33, .75);
     color: rgb(230, 231, 238);
   }
-  /* Caption text */
-  .captiontext {
+  /* Caption-text */
+.captiontext {
       color: #f2f2f2;
       font-size: 18px;
       padding: 8px 12px;
@@ -151,7 +171,7 @@
   }
   
   /* The dots/bullets/indicators */
-  .dot {
+.dot {
       cursor: pointer;
       height: 13px;
       width: 13px;
@@ -166,35 +186,47 @@
   }
   
   /* FADING ANIMATION */
-  .fade {
+.fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 2s;
       animation-name: fade;
       animation-duration: 2s;
   }
   
-  @-webkit-keyframes fade {
+@-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
   }
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
+  /* På mindre skärmar, minska textstorlek */
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
   }
   
-  .pics
+.pics
   {
       border:3px solid #494B55;
       width: 1065px;
       height: 500px;
   }
   
+
+  /* MITTENSEKTIONEN */
+
+section.mitten{
+    padding: 50px;
+    color: white;
+    margin: 0px 100px 0px 100px; 
+    
+  }
+
+
 
 
      /* FOOTERN */ 
@@ -204,7 +236,39 @@ footer {
     background-color: green; 
   }
   
-  p.copyright {
+p.copyright {
     color: rgb(218, 218, 218);
     margin-top: 20px; 
   }
+
+
+
+  /* NY SIDA */
+  /* MENYSIDAN */
+ul.pizzameny {
+  font-weight: bold;
+  list-style-type: none;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+p.pris {
+  color: red;
+  margin: 0px 5px 0px 5px; 
+  padding: 0px; 
+  display: inline-block;
+  vertical-align: top;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.pizzameny li {
+  margin-bottom: 10px;
+}
