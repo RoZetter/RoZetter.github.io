@@ -1,0 +1,210 @@
+/* FÖRSTA HEADERN */
+
+.forsta {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    padding: 30px 20px 30px 20px;
+    color: rgb(218, 218, 218);
+    margin: 0 100px 0 100px;
+    border-bottom: solid rgb(194, 191, 191) 1px;
+  }
+  
+  .forsta .logo a {
+    background-image: url("/images/subarulogo1.png");
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: block;
+    text-indent: -9999999px;
+    top: -37.515px;
+    height: 79px;
+    width: 80px;
+    padding: 0px 60px 0px 60px;
+    margin: auto;
+    z-index: 10;
+  }
+  
+    /* ANDRA HEADERN*/
+  
+  #header {
+    background-color: rgba(0, 0, 0, 0,1);
+    color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 50px;
+  }
+  
+  .scrolled #header {
+    opacity: 1;
+    transition: opacity .2s;
+    background-color: black;
+  }
+  
+  #header ul{
+    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  #header li {
+    height: 50px;
+    margin: 0px 5px 10px 10px;
+  }
+  
+  #header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: auto;
+    position: relative;
+    top: +15px;
+    font-size: 17px;
+  }
+  
+  #header a:hover {
+    color: #0e4bef;
+  }
+  
+  #header li:first-child {
+    margin-left: 355px;
+  }
+  
+  #header li:nth-last-child(5) {
+    margin-right: 45px;    
+  }
+  
+  #header .right a{
+    font-size: 11px;
+  
+  }
+  
+  .divide {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  
+  
+  
+    /* SLIDESHOW */
+  
+  #slide{
+    width: 100%;
+      }
+      
+  * {
+    box-sizing: border-box;
+  }
+  
+  .mySlides {
+    display: none;
+    margin: 0 100px 0 100px;
+  }
+  
+  .slideshow-container {
+    width: auto;
+      position: relative;
+      margin: -10px;
+  
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+    margin: -22px 100px 0 100px;
+    background-color: rgba(255, 255, 255, .25);
+      color: rgb(73, 75, 85);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(28,29,33, .75);
+    color: rgb(230, 231, 238);
+  }
+  /* Caption text */
+  .captiontext {
+      color: #f2f2f2;
+      font-size: 18px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+      cursor: pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+      background-color: #494B55;
+  }
+  
+  /* FADING ANIMATION */
+  .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2s;
+      animation-name: fade;
+      animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  
+  .pics
+  {
+      border:3px solid #494B55;
+      width: 1065px;
+      height: 500px;
+  }
+  
+
+
+     /* FOOTERN */ 
+
+footer {
+    margin: 0px 100px 0px 100px;
+    background-color: green; 
+  }
+  
+  p.copyright {
+    color: rgb(218, 218, 218);
+    margin-top: 20px; 
+  }

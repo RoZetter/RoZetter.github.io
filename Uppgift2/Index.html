@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ännu en sida</title>
-    <link rel="stylesheet" href="stylesheet för ännu.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" href="pizzeria.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon16x16.png">
+    <title>Lamare Pizzeria</title>
 </head>
 
 <body>
     
-<header><h1>Välkommen</h1>
+    <header class="forsta">
+        <nav>
+        <div class="logo"><a href="index.html">PIZZALOGO</a></div>
+        </nav>
+    </header>   
 
-    <nav>Navigation
-        <button class="buttons">Home page</button>
-        <button class="buttons">Another page</button>
-        <button class="buttons">Third page</button>
-        
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="meny.html"><strong>Meny</strong></a></li>
+                <li><a href="tillbehor.html"><strong>Tillbehör</strong></a></li>
+                <li><a href="kontakt.html"><strong>kontakt</strong></a></li>
 
-    </nav>
+                <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
+                </ul>
+        </nav>
+    </header>
+
+    <!-- SLIDESHOW -->
+
+    <div class="ss-container">
+        <div class="mySlides fade">
+            <img src="images/RETAIL.jpg" class="pics" alt="Grill"/>
+            <div class="captiontext">Hitta din framtida drömbil här idag.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/20_LEG.jpg" class="pics" alt="Legacy"/>
+          <div class="captiontext">Subaru Legacy.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/20_BRZ.jpg" class="pics" alt="BRZ"/>
+          <div class="captiontext">BrZ. Den mest potenta 400 HK besten att vråla på vägarna.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/obk20.jpg" class="pics" alt="Outback"/>
+          <div class="captiontext">Outback - Känn friheten | Terräng</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/20_WRX.jpg" class="pics" alt="WRX">/>
+          <div class="captiontext">WRX<br>Hantering | Prestanda | Teknik</div>
+      </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
     
-</header>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</div>
 
-    <section class="sidmeny">
-        <ul>
-            <li>Sid sektionen</li>
-            <li>En till del av  menyn</li>
-            <li>Tredje delen av menyn</li>
-            <li>Fjärde delen av menyn</li>
-            <li>5e delen av menyn</li>
-            <li>6e delen av menyn</li>
-            <li>7e delen av menyn</li>
-            <li>8e delen av menyn</li>
-            <li>9 delen av menyn</li>
-            <li>10 delen av menyn</li>
-            <li>10 delen av menyn</li>
-            <li>11 delen av menyn</li>
-            <li>12 delen av menyn</li>
-            <li>13 delen av menyn</li>
-            <li>14 delen av menyn</li>
+<!--SLUTET PÅ SLIDESHOW-->
 
-        </ul>
-    </section>
-    
-    <section>
-        <div class="middivs">Jag är</div> 
-        <div class="middivs">en tredelad</div>
-        <div class="middivs">section</div>      
-    </section>
+<footer><p class="copyright">© Subaru Motorworks Corporation. All rights reserved.</p></footer>
 
 
-    <section>
-        <div>Vi är</div>
-        <div>också divar</div>
-        <div>men utan class</div>
-        <div>För att skilja oss från de andra</div>
-    </section>    
+<script src="bilsida3.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-<footer>
-    Här står saker som copyright osv
-</footer>
-    
 
 </body>
 </html>
