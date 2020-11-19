@@ -16,6 +16,8 @@
 
 <body>
     
+    <!--TOPPEN AV SIDAN. DVS. LOGGA + TELEFON + FACEBOOKIKON-->
+
     <header class="forsta">
         <nav>    
             <ul class="top">
@@ -26,17 +28,41 @@
         </nav>
     </header>
 
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="meny.html"><strong>Meny</strong></a></li>
-                <li><a href="tillbehor.html"><strong>Tillbehör</strong></a></li>
-                <li><a href="kontakt.html"><strong>Kontakt</strong></a></li>
+        
 
-                <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
+    <header class="header">
+            <!--DATORMENYN-->
+            <nav class="desktopNav">
+                <ul>
+                    <li><a href="meny.html"><strong>Meny</strong></a></li>
+                    <li><a href="tillbehor.html"><strong>Tillbehör</strong></a></li>
+                    <li><a href="kontakt.html"><strong>Kontakt</strong></a></li>
+    
+                    <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
+                    </ul>
+            </nav>
+
+            <!--MOBILMENYN-->
+            <nav class="mobilNav">
+            <!-- Navigationlänkar (hidden by default) -->
+            <div id="myLinks">
+                <a href="meny.html">Meny</a>
+                <a href="tillbehor.html">Tillbehör</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>        
+                <ul>
+                    <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
                 </ul>
-        </nav>
+
+            <!-- "Hamburgermeny" för att aktivera navigationslänkarna -->
+                <a href="javascript:void(0);" class="icon" onclick="navFunktion()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </nav>
     </header>
+    
+
+
 
     <!-- SLIDESHOW -->
 

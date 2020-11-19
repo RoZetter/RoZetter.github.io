@@ -1,11 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-image: linear-gradient(rgb(0, 0, 0), rgb(rgb(31, 28, 28)));
   background-color: rgb(31, 28, 28);
   padding: 0px;
   margin: 0px;
+  color: white;
   }
 
+p {
+  margin-left: 25px;
+}
 
 
     /* FÖRSTA HEADERN */
@@ -36,8 +43,6 @@ header.forsta li.logo a {
 header.forsta ul.top {
 list-style-type: none;
 display: flex;
-
- 
 }
 
 ul.top li {
@@ -52,9 +57,11 @@ ul.top a {
 }
 
 
+
+
     /* ANDRA HEADERN*/
   
-#header {
+.header {
     background-color: rgba(0, 0, 0, 0,1);
     color: white;
     position: sticky;
@@ -63,13 +70,13 @@ ul.top a {
     height: 50px;
   }
   
-.scrolled #header {
+.scrolled .header {
     opacity: 1;
     transition: opacity .2s;
     background-color: black;
   }
   
-#header ul{
+.header ul{
     padding: 0;
     list-style-type: none;
     display: inline-flex;
@@ -77,12 +84,12 @@ ul.top a {
     margin: auto;
   }
   
-#header li {
+.header li {
     height: 50px;
     margin: 0px 50px 10px 10px;
   }
   
-#header a {
+.header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: auto;
@@ -91,35 +98,32 @@ ul.top a {
     font-size: 17px;
   }
   
-#header a:hover {
+.header a:hover {
     color: #0e4bef;
   }
   
-#header li:first-child {
+.header li:first-child {
     margin-left: 500px;
   }
   
-#header li:nth-last-child(2) {
+.header li:nth-last-child(2) {
     margin-right: 300px;    
   }
   
-#header .right a{
+.header .right a{
     font-size: 11px;
   
   }
   
 
-  
-  
+
+
     /* SLIDESHOW */
   
 #slide{
     width: 100%;
       }
       
-* {
-    box-sizing: border-box;
-  }
   
 .mySlides {
     display: none;
@@ -203,12 +207,6 @@ ul.top a {
     to {opacity: 1}
   }
   
-  /* På mindre skärmar, minska textstorlek */
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-  }
-  
 .pics
   {
       border:3px solid #494B55;
@@ -216,6 +214,8 @@ ul.top a {
       height: 500px;
   }
   
+
+
 
   /* MITTENSEKTIONEN */
 
@@ -243,14 +243,32 @@ p.copyright {
 
 
 
+
   /* NY SIDA */
-  /* MENYSIDAN */
+  /* PIZZASIDAN */
 ul.pizzameny {
   font-weight: bold;
   list-style-type: none;
   color: white;
   display: inline-block;
   vertical-align: top;
+  
+  
+}
+
+li.matcontainer1 {
+  background-color: black;
+  border-right: solid rgb(194, 191, 191) 1px;
+  padding-top: 10px; 
+  padding-left: 10px; 
+}
+
+li.matcontainer2 {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-right: solid rgb(194, 191, 191) 1px;
+  padding-top: 10px;
+  padding-left: 10px;
+
 }
 
 
@@ -262,13 +280,127 @@ p.pris {
   vertical-align: top;
 }
 
+p.ingrediens {
+  margin: 5px 0px 10px 25px;
+  font-weight: lighter;
+  padding-bottom: 10px; 
+  
+}
+
 h2 {
   font-size: 18px;
   margin-bottom: 20px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: top;  
 }
 
-ul.pizzameny li {
-  margin-bottom: 10px;
+
+
+
+
+    /* MOBILMENYN */
+
+/* Styling för navigationsmenyn */
+.mobilNav {
+  display: none;
+  
+}
+
+/* Gömmer länkarna i navigationsmenyn om inte menyn är aktiv */
+.mobilNav #myLinks {
+  display: none;
+}
+
+/* Styling för länkarna i navigationsmenyn */
+.mobilNav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  justify-content: flex-end;
+}
+
+/* Styling för hamburgermeny */
+.mobilNav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Lägger till en grå bakgrund vid hover */
+.mobilNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.aktivMeny {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+  /* SKÄRMANPASSNING */
+
+/* EXTRA SMÅ ENHETER */
+@media only screen and (max-width: 600px) {
+.text {font-size: 11px
+}
+.desktopNav {
+  display: none;
+}
+
+.mobilNav {
+  display: inline-flex;
+
+}
+}
+
+  /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
+@media only screen and (min-width: 600px) {
+
+.desktopNav {
+display: none;
+}
+
+.mobilNav {
+display: inline-flex;
+}
+}
+
+/* MEDIUMSTORA ENHETER (plattor) */
+@media only screen and (min-width: 768px) {
+.desktopNav {
+    display: none;
+    
+}
+.mobilNav {
+display: inline-flex;
+}
+}
+
+/* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
+@media only screen and (min-width: 992px) {
+.mobilNav {
+display: none; 
+}
+.desktopNav {
+display: inline-flex;
+}
+}
+
+
+/* EXTRA STORA ENHETER (större laptops och desktops, 1200px och uppåt) */
+@media only screen and (min-width: 1200px) {
+.mobilNav {
+display: none;
+}
+.desktopNav {
+display: inline-flex;
+}
 }

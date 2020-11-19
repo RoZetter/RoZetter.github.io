@@ -26,8 +26,9 @@
         </nav>
     </header>
 
-    <header id="header">
-        <nav>
+    <header class="header">
+        <!--DATORMENYN-->
+        <nav class="desktopNav">
             <ul>
                 <li><a href="meny.html"><strong>Meny</strong></a></li>
                 <li><a href="tillbehor.html"><strong>Tillbehör</strong></a></li>
@@ -36,85 +37,104 @@
                 <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
                 </ul>
         </nav>
-    </header>
+
+        <!--MOBILMENYN-->
+        <nav class="mobilNav">
+        <!-- Navigationlänkar (hidden by default) -->
+        <div id="myLinks">
+            <a href="meny.html">Meny</a>
+            <a href="tillbehor.html">Tillbehör</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>        
+            <ul>
+                <li class="right"><a href="english.html"><strong><i class="fas fa-globe"></i> English</strong></a></li>                    
+            </ul>
+
+        <!-- "Hamburgermeny" för att aktivera navigationslänkarna -->
+            <a href="javascript:void(0);" class="icon" onclick="navFunktion()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+</header>
+
     <p><strong>Hemlagad tomatsås & ost ingår i alla våra pizzor.</strong></p>
 <ul class="pizzameny"><h2>Prisklass 1.<p class="pris">70:-</p> Familjepizza <p class="pris">185:-</p></h2>
-    <li><strong>01. Margherita</strong></li>
-    <li><strong>02. Alfungi</strong></li>
-    <li><strong>03. Vesuvio</strong></li>
-    <li><strong>04. Bolognese</strong></li>
-    <li><strong>05. Al Tono</strong></li>
+    <li class="matcontainer1"><strong>01. Margherita</strong><p class="ingrediens">Tomat, ost</p></li>
+    <li class="matcontainer2"><strong>02. Alfungi</strong><p class="ingrediens">champinjoner</p></li>
+    <li class="matcontainer1"><strong>03. Vesuvio</strong><p class="ingrediens">skinka</p></li>
+    <li class="matcontainer2"><strong>04. Bolognese</strong><p class="ingrediens">köttfärssås</p></li>
+    <li class="matcontainer1"><strong>05. Al Tono</strong><p class="ingrediens">tonfisk</p></li>
 </ul>
 
 <ul class="pizzameny"><h2>Prisklass 2. <p class="pris">75:-</p> Familjepizza <p class="pris">195:-</p></h2>
-    <li><strong>06. Hawaii</strong></li>
-    <li><strong>07. Africana</strong></li>
-    <li><strong>08. Capricciosa</strong></li>
-    <li><strong>09. Lagondola</strong></li>
-    <li><strong>10. Calzone</strong></li>
-    <li><strong>11. Belinda</strong></li>
-    <li><strong>12. Bari</strong></li>
-    <li><strong>13. Marinara</strong></li>
-    <li><strong>14. Blecko</strong></li>
-    <li><strong>15. Bambino</strong></li>
-    <li><strong>16. Banana</strong></li>
+    <li class="matcontainer1"><strong>06. Hawaii</strong><p class="ingrediens">Ananas, skinka</p></li>
+    <li class="matcontainer2"><strong>07. Africana</strong><p class="ingrediens">Ananas, banan, curry</p></li>
+    <li class="matcontainer1"><strong>08. Capricciosa</strong><p class="ingrediens">Skinka, champinjoner</p></li>
+    <li class="matcontainer2"><strong>09. Lagondola</strong><p class="ingrediens">Skinka, räkor</p></li>
+    <li class="matcontainer1"><strong>10. Calzone</strong><p class="ingrediens">Skinka (inbakad)</p></li>
+    <li class="matcontainer2"><strong>11. Belinda</strong><p class="ingrediens">Bacon, ägg, lök</p></li>
+    <li class="matcontainer1"><strong>12. Bari</strong><p class="ingrediens">Salami, lök</p></li>
+    <li class="matcontainer2"><strong>13. Marinara</strong><p class="ingrediens">Räkor, musslor</p></li>
+    <li class="matcontainer1"><strong>14. Blecko</strong><p class="ingrediens">Champinjoner, räkor</p></li>
+    <li class="matcontainer2"><strong>15. Bambino</strong><p class="ingrediens">Skinka, tonfisk</p></li>
+    <li class="matcontainer1"><strong>16. Banana</strong><p class="ingrediens">Skinka, banan, curry</p></li>
     </ul>
     
 
 <ul class="pizzameny"><h2>Prisklass 3. <p class="pris">80:-</p> Familjepizza <p class="pris">205:-</p></h2>
-    <li><strong>17. Amigo</strong></li>
-    <li><strong>18. Bergamo</strong></li>
-    <li><strong>19. Ankona</strong></li>
-    <li><strong>20. Opera</strong></li>
-    <li><strong>21. Disco</strong></li>
-    <li><strong>22. Jamaica</strong></li>
-    <li><strong>23. Manatova</strong></li>
-    <li><strong>24. Napoli</strong></li>
-    <li><strong>25. Novara</strong></li>
-    <li><strong>26. Pepperoni</li>
-    <li><strong>27. Pescatore</li>
-    <li><strong>28. Firo</li>
-    <li><strong>29. Vegetariana</li>
-    <li><strong>30. Högaborg</li>
-    <li><strong>31. Italia</li>
-    <li><strong>32. John Blund</strong></li>
-    <li><strong>33. Messino</strong></li>
-    <li><strong>34. Monte Carlo</strong></li>
-    <li><strong>35. Monte Negro</strong></li>
-    <li><strong>36. Quattro Stagioni</strong></li>
-    <li><strong>37. Tefat</strong></li>
+    <li class="matcontainer1"><strong>17. Amigo</strong><p class="ingrediens">Champinjoner, köttfärs, paprika, lök</p></li>
+    <li class="matcontainer2"><strong>18. Bergamo</strong><p class="ingrediens">Champinjoner, bacon, salami, lök</p></li>
+    <li class="matcontainer1"><strong>19. Ankona</strong><p class="ingrediens">Skinka, salami, lök</p></li>
+    <li class="matcontainer2"><strong>20. Opera</strong><p class="ingrediens">Champinjoner, tonfisk, räkor</p></li>
+    <li class="matcontainer1"><strong>21. Disco</strong><p class="ingrediens">Skinka, köttfärs, räkor</p></li>
+    <li class="matcontainer2"><strong>22. Jamaica</strong><p class="ingrediens">Skinka, champinjoner, räkor</p></li>
+    <li class="matcontainer1"><strong>23. Manatova</strong><p class="ingrediens">Skinka, ananas, banan, curry</p></li>
+    <li class="matcontainer2"><strong>24. Napoli</strong><p class="ingrediens">Skinka, ananas, räkor</p></li>
+    <li class="matcontainer1"><strong>25. Novara</strong><p class="ingrediens">Banan, ananas, jordnötter, curry</p></li>
+    <li class="matcontainer2"><strong>26. Pepperoni</strong><p class="ingrediens">Skinka, paprika, pepperonikorv</p></li>
+    <li class="matcontainer1"><strong>27. Pescatore</strong><p class="ingrediens">Tonfisk, ananas, räkor</p></li>
+    <li class="matcontainer2"><strong>28. Firo</strong><p class="ingrediens">Gorgonzola, champinjoner, räkor</p></li>
+    <li class="matcontainer1"><strong>29. Vegetariana</strong><p class="ingrediens">Champinjoner, lök, paprika, kronärtskocka, oliver</p></li>
+    <li class="matcontainer2"><strong>30. Högaborg</strong><p class="ingrediens">Paprika, lök, färska tomater, oliver, fetaost</p></li>
+    <li class="matcontainer1"><strong>31. Italia</strong><p class="ingrediens">Skinka, köttfärssås, salami, lök, (stark)</p></li>
+    <li class="matcontainer2"><strong>32. John Blund</strong><p class="ingrediens">Skinka, champinjoner, lök, bacon, ägg</p></strong></li>
+    <li class="matcontainer1"><strong>33. Messino</strong><p class="ingrediens">Köttfärssås, gorgonzola, salami</p></strong></li>
+    <li class="matcontainer2"><strong>34. Monte Carlo</strong><p class="ingrediens">Kyckling, banan, curry, jordnötter, curry</p></strong></li>
+    <li class="matcontainer1"><strong>35. Monte Negro</strong><p class="ingrediens">Skinka, champinjoner, ananas, räkor</p></strong></li>
+    <li class="matcontainer2"><strong>36. Quattro Stagioni</strong><p class="ingrediens">Skinka, champinjoner, räkor, musslor, kronärtskocka</p></strong></li>
+    <li class="matcontainer1"><strong>37. Tefat</strong><p class="ingrediens">Skinka (dubbel calzone)</p></strong></li>
     </ul>
 
 <ul class="pizzameny"><h2>Prisklass 4. <p class="pris">85:-</p> Familjepizza <p class="pris">215:-</p></h2>
-    <li><strong>38. Kebabpizza</strong></li>
-    <li><strong>39. Lamare</strong></li>
-    <li><strong>40. Sicilana</strong></li>
-    <li><strong>41. Kycklingpizza</strong></li>
-    <li><strong>42. Ciao Ciao</strong></li>
-    <li><strong>43. Eldorado</strong></li>
-    <li><strong>44. Havet</strong></li>
-    <li><strong>45. Jägare</strong></li>
-    <li><strong>46. Venezia</strong></li>
-    <li><strong>47. Tomaso</strong></li>
-    <li><strong>48. Verone</strong></li>
+    <li class="matcontainer1"><strong>38. Kebabpizza</strong><p class="ingrediens">Champinjoner, lök, kebabkött, feferoni, valfri sås</p></li>
+    <li class="matcontainer2"><strong>39. Lamare Special</strong><p class="ingrediens">Skinka, champinjoner, lök, kebabkött, valfri sås</p></li>
+    <li class="matcontainer1"><strong>40. Sicilana</strong><p class="ingrediens">Skinka, kebabkött, valfri sås</p></li>
+    <li class="matcontainer2"><strong>41. Kycklingpizza</strong><p class="ingrediens">Champinjoner, lök, kyckling, feferoni, valfri sås</p></li>
+    <li class="matcontainer1"><strong>42. Ciao Ciao</strong><p class="ingrediens">Fläskfilé, champinjoner, lök, vitlök, (inbakad)</p></li>
+    <li class="matcontainer2"><strong>43. Eldorado</strong><p class="ingrediens">Köttfärssås, bacon, salami, ägg</p></li>
+    <li class="matcontainer1"><strong>44. Havet</strong><p class="ingrediens">Tonfisk, räkor, musslor, krabba</p></li>
+    <li class="matcontainer2"><strong>45. Jägare</strong><p class="ingrediens">Skinka, köttfärssås, champinjoner, lök</p></li>
+    <li class="matcontainer1"><strong>46. Venezia</strong><p class="ingrediens">Oxfilé, bearnaisesås</p></li>
+    <li class="matcontainer2"><strong>47. Tomaso</strong><p class="ingrediens">Fläskfilé, bearnaisesås</p></li>
+    <li class="matcontainer1"><strong>48. Verone</strong><p class="ingrediens">Kyckling, bacon, banan, jordnötter, curry</p></li>
     </ul>
 
 <ul class="pizzameny"><h2>Prisklass 5. <p class="pris">90:-</p> Familjepizza <p class="pris">235:-</p></h2>
-    <li><strong>49. Catanaia R</strong></li>
-    <li><strong>50. Capaiccino</strong></li>
-    <li><strong>51. Favorit</strong></li>
-    <li><strong>52. Gorgonzola</strong></li>
-    <li><strong>53. Gourmet</strong></li>
-    <li><strong>54. Juventus</strong></li>
-    <li><strong>55. Modena</strong></li>
-    <li><strong>56. Venedig</strong></li>
-    <li><strong>57. Panorama</strong></li>
-    <li><strong>58. Santana</strong></li>
-    <li><strong>59. Kärnan Special</strong></li>
-    <li><strong>60. Matador</strong></li>
-    <li><strong>61. Sish Kebab</strong></li>
-    <li><strong>62. Rom</strong></li>
-    <li><strong>63. Sorvento</strong></li>
+    <li class="matcontainer1"><strong>49. Catanaia R</strong></li>
+    <li class="matcontainer2"><strong>50. Capaiccino</strong></li>
+    <li class="matcontainer1"><strong>51. Favorit</strong></li>
+    <li class="matcontainer2"><strong>52. Gorgonzola</strong></li>
+    <li class="matcontainer1"><strong>53. Gourmet</strong></li>
+    <li class="matcontainer2"><strong>54. Juventus</strong></li>
+    <li class="matcontainer1"><strong>55. Modena</strong></li>
+    <li class="matcontainer2"><strong>56. Venedig</strong></li>
+    <li class="matcontainer1"><strong>57. Panorama</strong></li>
+    <li class="matcontainer2"><strong>58. Santana</strong></li>
+    <li class="matcontainer1"><strong>59. Kärnan Special</strong></li>
+    <li class="matcontainer2"><strong>60. Matador</strong></li>
+    <li class="matcontainer1"><strong>61. Sish Kebab</strong></li>
+    <li class="matcontainer2"><strong>62. Rom</strong></li>
+    <li class="matcontainer1"><strong>63. Sorvento</strong></li>
     </ul>
 
 <ul class="pizzameny"><h2>Mexikanska pizzor. <p class="pris">90:-</p></h2>

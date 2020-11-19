@@ -1,3 +1,4 @@
+
 var slideIndex = 0;
 showSlides();
 //add the global timer variable
@@ -59,9 +60,18 @@ function currentSlide(index) {
 }
 
 
-
 window.addEventListener('scroll', function () {
     document.body.classList[
     window.scrollY > 20 ? 'add': 'remove'
     ]('scrolled');
     });
+
+
+function navFunktion() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
