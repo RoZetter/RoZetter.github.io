@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'etiquettemedium';
+  src: url('etiquette-webfont.woff2') format('woff2'),
+       url('etiquette-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 body {
   background-image: linear-gradient(rgb(0, 0, 0), rgb(rgb(31, 28, 28)));
   background-color: rgb(31, 28, 28);
