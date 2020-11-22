@@ -6,14 +6,14 @@
 
 @font-face {
   font-family: 'elmessiri';
-  src:  url('https://github.com/manbearpear/manbearpear.github.io/tree/master/uppgift2/font/elmessiri-regular.otf') format('woff');
+  src:  url('https://github.com/manbearpear/manbearpear.github.io/tree/master/uppgift2/font/elmessiri-regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
 }
 
 @font-face {
   font-family: 'elmessiri';
-  src: url('https://github.com/manbearpear/manbearpear.github.io/tree/master/uppgift2/font/elmessiri-bold.otf') format('woff');
+  src: url('https://github.com/manbearpear/manbearpear.github.io/tree/master/uppgift2/font/elmessiri-bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
