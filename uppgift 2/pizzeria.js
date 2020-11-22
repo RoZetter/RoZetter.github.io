@@ -1,4 +1,6 @@
 
+//Slideshow
+
 var slideIndex = 0;
 showSlides();
 //add the global timer variable
@@ -19,7 +21,7 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
     //put the timeout in the timer variable
-    timer = setTimeout(showSlides, 4000); // Change image every 8 seconds
+    timer = setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
 function plusSlides(position) {
@@ -67,6 +69,11 @@ window.addEventListener('scroll', function () {
     });
 
 
+//SLUT AV SLIDESHOW
+
+
+
+// MOBILNAVIGATION
 function navFunktion() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
