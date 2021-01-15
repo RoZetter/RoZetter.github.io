@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hacking articles</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Article">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="stylesheet" href="../css/hackingNews.css">
+<link rel="stylesheet" href="../css/article.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="getCookie()">
+<div class="background">
+<!-- header starts here -->
+<header class="topnav" id="header">  
+<a class="logo"><img src="../img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	
+	<div class="menu">
+		<ul id="nav">
+			<li><a href="../html/errorPage.html">Home</a></li>
+			<li><a href="../html/errorPage.html">About</a></li>
+			<li><a href="../html/hackingNews.html">Hacking news</a></li>
+			<li><a href="../html/errorPage.html">Hacking tools</a></li>
+			<li><a href="../html/errorPage.html">Courses</a></li>
+		    <li><a href="../html/hackingChallenges.html">Hacking challenges</a></li>
+			<li><a href="../html/errorPage.html">Chat room</a></li>			
+			<li class="profile"><a href="../html/errorPage.html"><img src="../img/profile-icon-white.png" class="skeleton-img center_img" alt="Profile icon" title="Profile icon"><p id="account"></p></a></li>	
+			<li><a id="logout" href="../html/index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>			
+			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		</ul>
+	</div>
+</header>
+<!-- header ends here -->
+
+<!-- content starts here -->
+<div class="container articles-container">
+		
+<div class="wrap">
+				<div class="breadcrumbs">
+				<a href="../html/index.html"><span>Home </span></a>
+				<span>»</span><a href="hackingNews.html"><span> Hacking News </span></a>
+				<span>»</span><span class="current"> Article</span>
+				</div>		
+</div>		
+	
+<div class="row article-row">
+<div class="twelve columns img-row"><img src="../img/upsize_900px.jpg" alt="Article image" title="Article image" class="skeleton-img "></div>
+<div class="eleven columns">
+<p class="datetime">26/11/2020 - <span><i class="fa fa-comments-o"></i> 1</span></p>
+	   
+	   <h4>UAE authorities tackle rising cybercrime during COVID-19 pandemic</h4>
+	   
+	   <p>Big Data, blockchain and the Internet of things (IoT) have positively disrupted many Middle East and North African societies, economies and industries in recent years. However, with these technological advancements have come greater security risks.
+	   </p>
+	   <p>The outbreak of the Covid-19 pandemic caused an irrevocable shift in working practices around the globe. Companies were forced to rethink and restructure, creating new strategies to avoid disruption to their day-to-day interactions. In the vast majority of companies, these strategies pivoted on remote working and an increase in online interactions.</p>
+	   <p>Inevitably, this has led to an exponential increase in cyber crimes, already a major concern in a digitised world, where social engineering and fake news are causing profound shifts in working practices and leading to fears that a digital pandemic will follow hard on the heels of the crisis caused by Covid-19.</p>
+</div>
+</div>
+<hr>
+<div class="row article-row">		
+<div class="eleven columns comment-area">
+	<div class="comments">
+		<h3 class="section-head" id="section-head">1 comment</h3>
+		<ol class="comments-list">			
+			<li>
+				<div class="comment">								
+					<div class="comment-meta">					
+						<span class="comment-author">Tanja</span> on Wednesday, Nov 20, 2020 9:57 AM
+					</div>
+					<div class="comment-content" id="comment-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+						</p>																							
+						<div class="reply" id="reply">
+							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Answer to Tanja">Answer <i class="fa fa-angle-right"></i></a>
+							</div>			
+					</div>
+				</div>
+			</li>
+		</ol>
+		<div class="comment-meta" id="comments_timestamp"></div>
+		<div style="line-height: 1.2;" class="comment-content" id="comments_content"></div>
+		<div style="margin-bottom:20px;" class="comment-reply-link" id="answer"></div>
+		
+	<div class="respond">
+	<h3 class="section-head">Comment</h3>
+
+		<div class="twelve columns comment-form">
+		  <form>
+			<!-- <div class="row">
+			  <div class="six columns">
+				<input class="u-full-width" type="text" placeholder="Your name" id="nameInput">
+			  </div>
+			  <div class="six columns">
+				<input class="u-full-width" type="email" placeholder="Your email" id="emailInput">
+			  </div>
+			</div> -->
+			<textarea class="u-full-width" placeholder="Your comment" id="messageInput"></textarea>
+			<input class="button u-pull-right comment-submit" type="button" value="Post comment" onclick="postComment()";>
+		  </form>
+		</div>
+		<p>Info about spam-service.<a href="https://cleantalk.org/publicoffer#privacy" target="_blank" rel="nofollow noopener"> Learn how your comment data is handled.</a></p>
+	</div>
+</div>
+</div>
+
+</div>			
+</div>
+<!-- content ends here -->
+
+<!-- footer starts here -->
+<footer class="main-footer">
+    <div class="footer-wrap">	     
+        <ul class="row footer-row">        
+        <li class="twelve columns">
+        <div class="footer-links">
+        <a href="../html/errorPage.html" rel="nofollow">About</a> | 
+        <a href="../html/errorPage.html" rel="nofollow">Apply for work</a> |
+        <a href="../html/errorPage.html" rel="nofollow">Advertising</a> |
+        <a href="../html/contact.html" rel="nofollow">Contact</a> |
+        <a href="../html/errorPage.html" rel="nofollow">FAQ</a> |
+        <a href="../html/privacyPolicy.html" rel="nofollow">Privacy policy</a> |
+		<a href="../html/errorPage.html">Subscribe to newsletter</a>
+        </div>
+        </li>
+        <li class="twelve columns">
+            <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
+        <div class="">© <script> document.write(new Date().getFullYear()); </script> Social hacking. All rights reserved.</div>
+        <div class="tor"><img src="../img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
+        </li>	
+        </ul>			
+    </div>
+</footer>
+<!-- footer ends here -->
+
+</div> <!-- background end -->
+</body>
+<script src="../js/index.js"></script>
+</html>

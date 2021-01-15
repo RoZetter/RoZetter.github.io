@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Social Hacking</title>    
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Log in to Social hacking">
+<meta name="keywords" content="social hacking, hacker news, hacking news, hacker tools, hacking tools, hacker courses, hacking courses, hacker social media, cyber security news, cyber news">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<!--Colored progressbar-->
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<!--END-->
+
+<!-- header starts here -->
+<div id="header_wrapper">
+    <header class="header" id="header">
+    <a class="logo"><img src="../img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	
+
+    <!-- form for login -->	  
+    <form name="login_form" action="hackingNews.html" id="login_form" onsubmit="return checkPass()" >
+    <ul>
+    <li><input type="text" tabindex="1" id="userName" placeholder="Username" name="username" class="inputtext radius1" value=""></li>
+    <li><input type="password" tabindex="2" id="passWord" name="password" placeholder="Password" class="inputtext radius1"></li>
+    <li><input type="submit" class="loginbutton" name="login" value="Login"></li>
+</ul>
+<ul>
+    <li><label><input id="logincheckbox" type="checkbox" name="persistent" value="1" checked="1"/>Keep me logged in</label><li>
+    <li><label><a href="">Forgot your password?</a></label></li>
+    </ul>	
+</form>
+    <!-- form end  -->
+
+
+	<!-- show error message if incorrect log in -->
+	<div id="loginStatus"></div>
+	<!-- error message end -->
+    </header>
+   </div>
+<!-- header ends here -->
+
+
+<div class="hero-image">
+    <div class="hero-text">
+        <p class="heroP">Because anonymity needs to be protected</p>
+        <p class="heroP">Because information wants to be free</p>
+    </div>
+</div>
+
+<div class="container" style="min-height: calc(100vh - 252px);">
+<div class="row">
+<div class="twelve columns">
+<!-- sign up form -->
+<div class="registerbox radius">
+<h1>Welcome to<br> Social hacking</h1>
+		<div class="registerBoxInner radius">
+			<div class="registerheader">
+			<h2 class="title">The social network focused on hacking</h2>
+			</div>
+			<!--registerheader-->
+		<div class="registerform">
+				<form id="register" action="" method="post">
+				<p>
+				<input type="text" id="firstname" name="firstname" placeholder="User Name" value="" class="radius" />
+				</p>
+				<p>
+				<input type="text" id="email" name="email" placeholder="Your Email" value="" class="radius" />
+				</p>
+				<p>
+				<input type="text" id="remail" name="remail" placeholder="Re-enter Email" class="radius" />
+				</p>
+				<p>
+				<input type="password" id="password" name="password" placeholder="Password" class="radius" />
+				</p>
+				<p>
+				<button class="radius title" name="signup">Sign Up</button>
+				</p>
+				</form>
+
+		</div>
+		<!--End registerform-->
+		</div>
+		<!--End registerboxinner-->
+</div>
+<!--End registerbox-->
+</div>
+</div>
+
+<!-- Cookiebanner -->
+<div class="twelve columns">
+    <div id="cookieBanner">
+        <h3>This site uses cookies</h3> This website uses 🍪 to ensure you get the best experience on our website.  
+        We use cookies to ensure you get the best experience on our website, personalise content and ads, 
+        to provide social media features and to analyse our traffic. 
+        We also share information about your use of our site with our social media, 
+        advertising and analytics partners who may combine it with other information 
+        that you’ve provided to them or that they’ve collected from your use of their services.</p>
+        <p>In order to specify which cookies to allow please make a choice amongst the following:<br>
+            <button class="js-cookie-dismiss" onclick="closeS()">Allow all</button>
+        <button class="js-cookie-dismiss" onclick="closeS()">Use only necessary</button>
+        <a class="cookiepol" href="privacyPolicy.html">Cookie Policy and settings</a>
+    </div>
+ </div>
+	<!--End cookiebanner-->   
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="footer-wrap">	     
+        <ul class="row footer-row">        
+        <li class="twelve columns">
+        <div class="footer-links">
+        <a href="../html/errorPage.html" rel="nofollow">About</a> | 
+        <a href="../html/errorPage.html" rel="nofollow">Apply for work</a> |
+        <a href="../html/errorPage.html" rel="nofollow">Advertising</a> |
+        <a href="../html/contact.html" rel="nofollow">Contact</a> |
+        <a href="../html/errorPage.html" rel="nofollow">FAQ</a> |
+        <a href="../html/privacyPolicy.html" rel="nofollow">Privacy policy</a> |
+		<a href="../html/errorPage.html">Subscribe to newsletter</a>
+        </div>
+        </li>
+        <li class="twelve columns">
+            <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
+        <div class="">© <script> document.write(new Date().getFullYear()); </script> Social hacking. All rights reserved.</div>
+        <div class="tor"><img src="../img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
+        </li>	
+        </ul>			
+    </div>
+</footer>
+ <!-- End footer -->
+
+</body>
+<script src="../js/index.js"></script>
+</html>
