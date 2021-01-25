@@ -486,6 +486,36 @@ footer .svg-inline--fa:hover
 
 
 /* media queries */
+
+/*Height*/
+@media screen and (max-height: 700px) {
+    #video 
+    {
+        position: absolute;
+        top: -10%;
+        left: 10%; 
+    }
+}
+@media screen and (max-height: 600px) {
+    #video 
+    {
+        position: absolute;
+        top: -15%;
+        left: 10%; 
+    }
+}
+@media screen and (max-height: 500px) {
+    #video 
+    {
+        position: absolute;
+        top: -25%;
+        left: 10%; 
+    }
+}
+
+
+
+/*Width*/
 @media (max-width: 300px) 
 {
     .fixed-background h3
