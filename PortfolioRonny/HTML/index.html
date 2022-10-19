@@ -1,3 +1,28 @@
+<!--PHP for Email form-->
+
+<?php 
+if(isset($_POST['submit'])){
+    $to = "roze198809@gmail.com"; // this is my email address
+    $from = $_POST['form_email']; // this is the sender's Email address
+    $form_name = $_POST['form_name']; // this is the first name coloumn
+    $form_lastname = $_POST['form_lastname']; // this is the last name coloumn
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $form_name . " " . $form_lastname . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $form_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $form_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+<!--End of PHP-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -257,15 +282,14 @@
                         </div>
                         <div class="content">
                             <h3>The 'Social hacking' project</h3>
-                            <p>Project at EC Education in which the pair of us in 'EasierSaidThanRun' created a social media targeting ethical hackers</p>
-                            
+                            <p>Project at EC Education in which the pair of us in 'EasierSaidThanRun' created a social media targeting ethical hackers</p> 
                         </div>
                     </div>
                     
                                
                     <div class="card col-md-12">
                         <div class="cardImg">
-                            <a href="../HTML/PortProjects/GoToHub.pdf" target="_blank"><img src="../IMGS/GoMountains.jpg" alt=""></a>
+                            <a href="../HTML/PortProjects/GoToHub.pdf" target="_blank"><img src="../IMGS/GoMountains.jpg" alt="GoToHub"></a>
                         </div>
                         <div class="content">
                             <h3>GoToHub website redesign</h3>
@@ -316,12 +340,14 @@
                 <div class="col-md-6 clients">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="../IMGS/client1.png" alt="Client1">
+                            <img src="../IMGS/Robert.jpg" alt="Client1">
                         </div>
                         <div class="col-md-8">
-                            <blockquote><i class="fas-fa-quote-left"></i>Simply the best..better than all the rest!
+                            <blockquote><i class="fas-fa-quote-left">I'm grateful that we got the chance to borrow Ronny a while during his education. 
+                                His UX/UI work has improved our platform and increased our knowledge of the market. 
+                                That Ronny is also a pleasant and easy going person is just a bonus.</i>
                                 <hr class="clients-hr">
-                                <cite>&#8212; Eric, small business owner</cite>
+                                <cite>&#8212; Robert, Senior Dotnet Developer at Nowaste Logistics AB</cite>
                             </blockquote>
                             </div> <!--CLosing "col-md-8"-->
                         </div> <!--Closing "col-md-4"-->
@@ -331,12 +357,14 @@
                 <div class="col-md-6 clients">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="../IMGS/client2.png" alt="Client2">
+                            <img src="../IMGS/Henrik.jpg" alt="Client2">
                         </div>
                         <div class="col-md-8">
-                            <blockquote><i class="fas-fa-quote-left"></i>It's a bird, it's a plane..no it's Ronny!
+                            <blockquote><i class="fas-fa-quote-left">Ronny was one of my first UX-design graduates from EC-Utbildning.
+                                His classmates expresses that Ronny is friendly, caring, down to earth, secure in himself, curious, motivated, funny and more.
+                                I can only agree and I wish Ronny all the best in his new career within the UX business! </i>
                                 <hr class="clients-hr">
-                                <cite>&#8212; Elin, CEO</cite>
+                                <cite>&#8212; Henrik, Education manager at EC-Utbildning</cite>
                             </blockquote>
                             </div> <!--CLosing "col-md-8"-->
                         </div> <!--Closing "col-md-4"-->
@@ -388,7 +416,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_email">Email alt. mobile number*</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email or mobile number*" required="required" data-error="Valid email is required.">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email or mobile number*" required="required" data-error="Valid email or mobile number is required.">
                         </div>
                     </div>
 
@@ -397,7 +425,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message.. *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message.. *" rows="4" required="required" data-error="Please, leave me a message."></textarea>
                         </div>
                     </div>
                     </div>
@@ -411,13 +439,11 @@
 
                     <div class="row justify-content-center text-center">
                     <div class="col-md-6">
-                        <input type="submit" class="contactButton btn btn-secondary btn-md" value="Send message">
+                        <input type="submit" class="contactButton btn btn-secondary btn-md" name="submit" value="Send message">
                     </div>
                 </div>
             </div>
         </form>
-    
-
     </div> <!--Ends "contact" section-->
 
 
@@ -429,8 +455,8 @@
         <div class="col-me-5 text-center">
             <img src="../IMGS/iconportfolio.jpg" alt="logo">
             <p class="footerP">You can also find me on:</p>
-            <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/ronny.zetterstrom" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/ronny-zetterström" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
             
@@ -451,5 +477,4 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <script src="../JS/JS.js"></script>
 </html>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
